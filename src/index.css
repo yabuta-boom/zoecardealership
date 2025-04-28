@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-section {
+  background-image: url('https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+
+.section-heading {
+  @apply text-4xl font-bold text-gray-900 text-center mb-12;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
